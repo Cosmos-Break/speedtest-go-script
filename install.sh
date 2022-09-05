@@ -92,7 +92,7 @@ function get_speedtest(){
     cp ./speedtest $dir
     cd && rm -rf speedtest go
     cd $dir && sed -i "4s/[0-9]\{1,5\}/$port/g" settings.toml
-    cd $dir"assets" && mv example-singleServer-full.html index.html
+#     cd $dir"assets" && mv example-singleServer-full.html index.html
     rm -rf /usr/local/go /usr/go
 }
 
